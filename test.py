@@ -1,7 +1,10 @@
 import requests
 import pandas as pd
+import os
+from dotenv import load_dotenv
+load_dotenv()
 
-API_KEY = "860972832ec6b6fb41a84e2352919cad"
+API_KEY = os.getenv("API_KEY")
 
 url = "https://api.marketstack.com/v2/eod"
 
