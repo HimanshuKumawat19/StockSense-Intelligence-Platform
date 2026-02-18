@@ -6,7 +6,8 @@ readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
     "dotenv>=0.9.9",
-    "pandas>=3.0.0",
+    "growwapi>=1.5.0",
+    "pandas>=2.2.3,<3.0.0",
     "requests>=2.32.5",
     "scikit-learn>=1.8.0",
 ]
