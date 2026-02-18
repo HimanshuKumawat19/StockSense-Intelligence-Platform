@@ -1,0 +1,100 @@
+import requests
+import pandas as pd
+import json
+import os
+import time
+from dotenv import load_dotenv
+
+# -----------------------------
+# LOAD API KEY
+# -----------------------------
+load_dotenv()
+API_KEY = os.getenv("API_KEY")
+
+# -----------------------------
+# SYMBOL LIST
+# -----------------------------
+SYMBOLS = [
+    "AAPL","MSFT","GOOGL","AMZN","NVDA",
+    "META","TSLA","JPM","V","WMT"
+]
+
+# -----------------------------
+# CONFIG
+# -----------------------------
+URL = "https://api.marketstack.com/v2/eod"
+LIMIT = 1000
+SAVE_DIR = "dataset"
+
+os.makedirs(SAVE_DIR, exist_ok=True)
+
+# -----------------------------
+# FETCH FUNCTION
+# -----------------------------
+def fetch_symbol(symbol):
+    all_rows = []
+    offset = 0
+
+    print(f"\nFetching {symbol}...")
+
+    while True:
+        params = {
+            "access_key": API_KEY,
+            "symbols": symbol,
+            "limit": LIMIT,
+            "offset": offset
+        }
+
+        response = requests.get(URL, params=params)
+        data = response.json()
+
+        # error handling
+        if "data" not in data:
+            print("API Error:", data)
+            return None
+
+        rows = data["data"]
+
+        if not rows:
+            break
+
+        all_rows.extend(rows)
+        print(f"{symbol}: +{len(rows)} rows")
+
+        offset += LIMIT
+        time.sleep(1)
+
+    return all_rows
+
+
+# -----------------------------
+# MAIN LOOP
+# -----------------------------
+for symbol in SYMBOLS:
+
+    rows = fetch_symbol(symbol)
+
+    if not rows:
+        continue
+
+    # convert to dataframe
+    df = pd.json_normalize(rows)
+
+    # sort oldest → newest
+    df = df.sort_values("date")
+
+    # remove duplicates if any
+    df = df.drop_duplicates(subset=["date"])
+
+    # safe company name for filename
+    company_name = df["name"].iloc[0].replace(" ", "_").replace(".", "")
+
+    filename = f"{company_name}_{symbol}_stocks.csv"
+    path = os.path.join(SAVE_DIR, filename)
+
+    # save file
+    df.to_csv(path, index=False)
+
+    print(f"Saved → {path}")
+
+print("\nDone fetching all companies.")
