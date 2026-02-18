@@ -20,21 +20,8 @@
               "icon": "lucide-file",
               "title": "data_catalog"
             }
-          },
-          {
-            "id": "8f1eaf5a9508f4c9",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/Drawing 2026-02-18 22.26.11.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2026-02-18 22.26.11.excalidraw"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -91,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "4e066c3fc2db7cfc",
@@ -108,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Excalidraw/Drawing 2026-02-18 22.26.11.excalidraw.md",
+                "file": "data_catalog.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Drawing 2026-02-18 22.26.11.excalidraw"
+              "title": "Backlinks for data_catalog"
             }
           },
           {
@@ -127,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Excalidraw/Drawing 2026-02-18 22.26.11.excalidraw.md",
+                "file": "data_catalog.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Drawing 2026-02-18 22.26.11.excalidraw"
+              "title": "Outgoing links from data_catalog"
             }
           },
           {
@@ -170,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Excalidraw/Drawing 2026-02-18 22.26.11.excalidraw.md",
+                "file": "data_catalog.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Drawing 2026-02-18 22.26.11.excalidraw"
+              "title": "Outline of data_catalog"
             }
           }
         ]
@@ -198,21 +184,23 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "8f1eaf5a9508f4c9",
+  "active": "ce138ad0282be2f8",
   "lastOpenFiles": [
-    "Pasted Image 20260218235318_319.png",
-    "Pasted Image 20260218235152_906.png",
-    "Pasted Image 20260218235026_627.png",
-    "Pasted Image 20260218234548_637.png",
-    "Pasted Image 20260218234539_397.png",
-    "Pasted Image 20260218234511_528.png",
-    "Pasted Image 20260218234224_104.png",
-    "Pasted Image 20260218231130_563.png",
-    "Untitled.md",
-    "Excalidraw/Drawing 2026-02-18 22.26.11.excalidraw.md",
-    "Excalidraw",
-    "Untitled.base",
+    "companies_symbol.md",
+    "Excalidraw/production_architecture.excalidraw.md",
+    "Architecture Overview.md",
+    "Excalidraw/Daily Automatic Cycle.excalidraw.md",
+    "Excalidraw/Pasted Image 20260218235318_319.png",
+    "Excalidraw/Drawing 2026-02-19 00.08.23.excalidraw.md",
     "data_catalog.md",
-    "companies_symbol.md"
+    "Excalidraw/Pasted Image 20260218235152_906.png",
+    "Excalidraw/Pasted Image 20260218235026_627.png",
+    "Excalidraw/Pasted Image 20260218234548_637.png",
+    "Excalidraw/Pasted Image 20260218234539_397.png",
+    "Excalidraw/Pasted Image 20260218234511_528.png",
+    "Excalidraw/Pasted Image 20260218234224_104.png",
+    "Excalidraw/Pasted Image 20260218231130_563.png",
+    "Excalidraw",
+    "Untitled.base"
   ]
 }
