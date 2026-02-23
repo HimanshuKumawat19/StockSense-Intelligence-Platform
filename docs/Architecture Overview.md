@@ -25,17 +25,17 @@ The system follows a cyclic ML production workflow:
 
 # 🚀 Tech Stack
 
-|Layer|Technology|
-|---|---|
-|Data Source|MarketStack API|
-|Backend Language|Python|
-|ML Model|XGBoost|
-|API Framework|FastAPI|
-|Database|PostgreSQL|
-|Containerization|Docker|
-|Deployment|AWS EC2|
-|Reverse Proxy (Optional)|Nginx|
-|Model Storage|S3 or EC2 disk|
+| Layer                    | Technology      |
+| ------------------------ | --------------- |
+| Data Source              | MarketStack API |
+| Backend Language         | Python          |
+| ML Model                 | XGBoost         |
+| API Framework            | FastAPI         |
+| Database                 | PostgreSQL      |
+| Containerization         | Docker          |
+| Deployment               | AWS EC2         |
+| Reverse Proxy (Optional) | Nginx           |
+| Model Storage            | S3 or EC2 disk  |
 
 ---
 
