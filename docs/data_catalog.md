@@ -35,6 +35,7 @@
 | symbol         | string | No       | Ticker symbol          | Identifier      |
 | exchange       | string | No       | Exchange name          | Metadata        |
 | date           | string | No       | Trading date           | ⭐ Primary Index |
+|                |        |          |                        |                 |
 
 ---
 
